@@ -80,7 +80,7 @@ int main(int argc, char **argv)
 
 	Mat cameraMatrix= Mat::eye(3, 3, CV_64F); // 定义相机内参矩阵
 	vector<int> point_counts;  // 每幅图像中角点的数量
-	Mat distCoeffs = Mat::eye(1, 5, CV_64F);  // 摄像机的五个畸变系数: k1 k2 p1 p2 k2
+	Mat distCoeffs = Mat::zeros(1, 5, CV_64F);  // 摄像机的五个畸变系数: k1 k2 p1 p2 k2
 	vector<Mat> tvecsMat;  //每幅图像的评议向量  
 	vector<Mat> rvecsMat;  //每幅图像的旋转向量
 	// 计算角点的真实坐标（假定在z=0平面上）

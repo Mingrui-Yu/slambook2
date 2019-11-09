@@ -1,8 +1,0 @@
-mychessboard/1.jpg
-mychessboard/2.jpg
-mychessboard/3.jpg
-mychessboard/4.jpg
-mychessboard/5.jpg
-mychessboard/6.jpg
-mychessboard/7.jpg
-mychessboard/8.jpg
