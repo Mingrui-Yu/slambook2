@@ -1,0 +1,9 @@
+chessboard/left01.jpg
+chessboard/left02.jpg
+chessboard/left03.jpg
+chessboard/left04.jpg
+chessboard/left05.jpg
+chessboard/left06.jpg
+chessboard/left07.jpg
+chessboard/left08.jpg
+chessboard/left09.jpg
