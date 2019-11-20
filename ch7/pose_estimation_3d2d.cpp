@@ -59,6 +59,9 @@ int main(int argc, char **argv) {
   vector<DMatch> matches;
   find_feature_matches(img_1, img_2, keypoints_1, keypoints_2, matches);
   cout << "一共找到了" << matches.size() << "组匹配点" << endl;
+  // for (DMatch m:matches) {
+  //   cout << keypoints_1[m.queryIdx].pt.x << " " << keypoints_1[m.queryIdx].pt.y << endl;
+  // }
 
   // 建立3D点
   Mat d1 = imread(argv[3], CV_LOAD_IMAGE_UNCHANGED);       // 深度图为16位无符号数，单通道图像
