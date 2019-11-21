@@ -209,9 +209,10 @@ void pose_estimation_3d3d(const vector<Point3f> &pts1,
     p1 += pts1[i];
     p2 += pts2[i];
   }
+
   p1 = Point3f(Vec3f(p1) / N);
   p2 = Point3f(Vec3f(p2) / N);
-  vector<Point3f> q1(N), q2(N); // remove the center
+  vector<Point3f> q1(N), q2(N); // remove the centers
   for (int i = 0; i < N; i++) {
     q1[i] = pts1[i] - p1;
     q2[i] = pts2[i] - p2;
