@@ -209,6 +209,8 @@ int main(int argc, char **argv) {
         plotDepth(ref_depth, depth);
         imshow("image", curr);
         waitKey(1);
+        cout << "estimation returns, saving depth map ..." << endl;
+        imwrite("depth.png", depth);
     }
 
     cout << "estimation returns, saving depth map ..." << endl;
