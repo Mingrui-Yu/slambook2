@@ -18,7 +18,7 @@ public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
     typedef std::shared_ptr<MapPoint> Ptr;
     unsigned long id_ = 0;
-    bool is_outlier = false;
+    bool is_outlier_ = false;
     Vec3 pos_ = Vec3::Zero();
     std::mutex data_mutex_;
     int observed_times_ = 0;

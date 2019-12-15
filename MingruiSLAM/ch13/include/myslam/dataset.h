@@ -4,6 +4,7 @@
 #include "myslam/common_include.h"
 #include "myslam/camera.h"
 #include "myslam/frame.h"
+#include "myslam/config.h"
 
 namespace myslam{
 
@@ -34,6 +35,8 @@ public:
 private:
     std::string dataset_path_;
     int current_image_index_ = 0;
+
+    int max_num_images_ = Config::Get<int>("max_num_images");
 
     std::vector<Camera::Ptr> cameras_;
 

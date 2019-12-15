@@ -24,7 +24,7 @@ public:
     std::weak_ptr<MapPoint> map_point_;  // 关联地图点
 
     bool is_outlier_ = false;  // 是否为异常点
-    bool is_on_left_image = true;  // 标识是否在作图，false为右图
+    bool is_on_left_image_ = true;  // 标识是否在左图，false为右图
 
 public:
     Feature() {}

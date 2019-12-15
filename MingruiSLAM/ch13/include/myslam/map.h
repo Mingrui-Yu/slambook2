@@ -55,6 +55,8 @@ public:
     void CleanMap();
 
 
+
+
 private:
     void RemoveOldKeyframe();
     std::mutex data_mutex_;
@@ -62,7 +64,7 @@ private:
     LandmarksType active_landmarks_;
     KeyframesType keyframes_;
     KeyframesType active_keyframes_;
-
+ 
     Frame::Ptr current_frame_ = nullptr;
 
     // settings

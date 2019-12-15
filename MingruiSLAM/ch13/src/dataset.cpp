@@ -35,7 +35,7 @@ bool Dataset::Init(){
              projection_data[4], projection_data[5], projection_data[6],
              projection_data[8], projection_data[9], projection_data[10];
         Vec3 t;
-        t << projection_data[4], projection_data[7], projection_data[11];
+        t << projection_data[3], projection_data[7], projection_data[11];
         t = K.inverse() * t;
         K = K * 0.5;
         
@@ -58,7 +58,7 @@ Frame::Ptr Dataset::NextFrame(){
     image_left = cv::imread((fmt % dataset_path_ % 0 % current_image_index_).str(), cv::IMREAD_GRAYSCALE);
     image_right = cv::imread((fmt % dataset_path_ % 1 % current_image_index_).str(), cv::IMREAD_GRAYSCALE);
 
-    if (image_left.data == nullptr || image_right.data == nullptr){
+    if (current_image_index_ >= max_num_images_ || image_left.data == nullptr || image_right.data == nullptr){
         LOG(WARNING) << "cannot find images at index" << current_image_index_;
         return nullptr;
     }

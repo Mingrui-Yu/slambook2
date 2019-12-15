@@ -6,6 +6,10 @@ add_library(myslam SHARED
                             mappoint.cpp
                             dataset.cpp
                             map.cpp
+                            viewer.cpp
+                            frontend.cpp
+                            backend.cpp
+                            visual_odometry.cpp
                             )
 
 
