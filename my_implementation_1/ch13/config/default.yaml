@@ -1,0 +1,15 @@
+%YAML:1.0
+
+dataset_dir: /home/ymr/Mingrui/SLAMlearning/00
+
+#camera intrinsics
+camera.fx: 517.3
+camera.fy: 516.5
+camera.cx: 325.1
+camera.cy: 249.7
+
+num_features: 150
+num_features_init: 50
+num_features_tracking: 50
+
+max_num_images: 10000  # 读入的视频帧总数
