@@ -107,6 +107,8 @@ void find_feature_matches(
     double min_dist = min_max.first->distance;
     double max_dist = min_max.second->distance;
 
+    cout << "min_dist = " << min_dist << endl;
+
     for (int i=0; i<descriptors_1.rows; i++){
         if(match[i].distance <= max(2*min_dist, 30.0)){
             matches.push_back(match[i]);
